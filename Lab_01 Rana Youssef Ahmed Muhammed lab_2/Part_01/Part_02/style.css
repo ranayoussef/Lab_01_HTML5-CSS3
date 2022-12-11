@@ -1,0 +1,27 @@
+body {
+  padding: 0;
+  margin: 0;
+  max-width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#color-container {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#color-container div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#color-container input {
+  width: 85%;
+}

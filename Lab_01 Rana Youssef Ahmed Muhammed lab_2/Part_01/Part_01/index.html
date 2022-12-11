@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-1-Video</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="video-container">
+      <video
+        src="./video/Y2Mate.is - 20 Second Timer Bomb [3D TIMER] 💣-0wz6RfUXT0w-1080p-1654438236008.mp4"
+        id="vid1"
+        poster="./p05lqc4f.jpg"
+      ></video>
+      <div id="controllers">
+        <div id="play-back-tracker">
+          <input type="range" name="time" id="time-range"/>
+          <label for="time-range">
+            <span id="current-time"></span>
+            : <span id="video-length"></span>
+          </label>
+        </div>
+        <div id="play-back-controllers">
+          <div id="play-controller">
+            <button id="play">Play</button>
+            <button id="stop">Stop</button>
+            <button id="fast-backward">&lt&lt</button>
+            <button id="backward">&lt</button>
+            <button id="forward">&gt</button>
+            <button id="fast-forward">&gt&gt</button>
+          </div>
+          <div id="sound-container">
+            <input type="range" name="sound" id="sound" min="0" max="1" />
+            <button id="mute">Mute</button>
+          </div>
+        </div>
+        <div id="speed-controller">
+          <label for="speed"><b>Speed</b></label>
+          <input type="range" name="speed" id="speed" min="0" max="2" step="0.25" />
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
